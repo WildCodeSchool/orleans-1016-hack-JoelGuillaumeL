@@ -19,6 +19,9 @@
     <![endif]-->
 </head>
 <body>
+<?php
+include ('meteo.php');
+?>
 <div class="container">
     <h1>WeatherMood</h1>
     <input type="text" class="form-control" placeholder="Entrez une Ville">
