@@ -1,8 +1,12 @@
 h1 {
     text-align: center;
-    margin: 15%;
+    margin: 10%;
 }
 
 .player {
-    margin: 15%;
+    margin: 10%;
+}
+
+.echo {
+    text-align: center;
 }

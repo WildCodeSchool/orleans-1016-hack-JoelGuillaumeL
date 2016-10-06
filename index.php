@@ -26,6 +26,7 @@
 </head>
 <body>
     <div class="container">
+
         <div class="row">
             <div class="col-xs-6">
     <form action="weathermood.php" method="post">

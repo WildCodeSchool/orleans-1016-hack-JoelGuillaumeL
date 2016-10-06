@@ -27,10 +27,7 @@ include ('meteo.php');
 <div class="container">
     <div class="row">
         <h1>WeatherMood</h1>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-3">
+        <div class="echo">
     <?php
         if ($temps == 'beau temps') {
             include ("playersun.php");
@@ -44,6 +41,7 @@ include ('meteo.php');
         echo ($weather->city->name) . '<br/>';
         echo ($weather->temperature->now);
     ?>
+            </div>
         </div>
         <div class="row"></div>
     </div>
