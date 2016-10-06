@@ -23,8 +23,15 @@
     <h1>WeatherMood</h1>
     <input type="text" class="form-control" placeholder="Entrez une Ville">
     <?php
-        include ("playersun.php");
-        include ("playerrain.php");
+        if ($temps == 'beau temps') {
+            include ("playersun.php");
+        }elseif ($temps == 'nuageux') {
+            include ("playercloud.php");
+        }elseif ($temps == 'pluvieux') {
+            include ("playerrain.php");
+        }elseif ($temps == 'orageux') {
+            include ('playerstorm.php');
+        }
     ?>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
