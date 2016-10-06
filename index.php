@@ -22,6 +22,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places" type="text/javascript"></script>
+    <script type="text/javascript">
+
+
+        function initialize() {
+
+            var options = {
+                types: ['(cities)'],
+            };
+
+            var input = document.getElementById('recherche-ville');
+            var autocomplete = new google.maps.places.Autocomplete(input, options);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 </head>
 <body>
@@ -30,7 +45,7 @@
             <div class="col-xs-6">
     <form action="weathermood.php" method="post">
         <p>
-            <input type="text" class="form-control" placeholder="Entrez une Ville" name="ville">
+            <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
             <a href="weathermood.php"><imput type="submit" class="btn btn-default" value="validé"></imput></a>
         </p>
     </form>
