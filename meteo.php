@@ -65,7 +65,7 @@ class OpenWeatherMap
     private $weatherHistoryUrl = 'http://api.openweathermap.org/data/2.5/history/city?';
 
     /**
-     * @var AbstractCache|bool $cache The cache to use.
+     * @var AbstractCache|bool $cache The cache to use.g
      */
     private $cache = false;
 
