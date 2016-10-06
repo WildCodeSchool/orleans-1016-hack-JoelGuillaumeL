@@ -31,6 +31,9 @@ use Cmfcmf\OpenWeatherMap\WeatherHistory;
  *
  * @api
  */
+if (!isset($_POST['ville'])){
+    header('Location: index.php');}
+
 class OpenWeatherMap
 {
     /**
@@ -519,6 +522,7 @@ $units = 'metric';
 // Don't use caching (take a look into Examples/Cache.php to see how it works).
 $owm = new OpenWeatherMap('e4f9475bdd806e15239188aa6feb4fd8');
 $ville = $_POST['ville'];
+
 try {
     $weather = $owm->getWeather($ville, $units, $lang);
 } catch(OWMException $e) {
@@ -528,9 +532,7 @@ try {
 }
 
 
-if ($weather == null){
-    $temps = "erreur";
-}elseif($weather->weather->icon == "01d" || $weather->weather->icon == "01n" || $weather->weather->icon == "02d" || $weather->weather->icon == "02n"){
+if ($weather->weather->icon == "01d" || $weather->weather->icon == "01n" || $weather->weather->icon == "02d" || $weather->weather->icon == "02n"){
     $temps = "beau temps";
 }elseif ($weather->weather->icon == '03d' || $weather->weather->icon == '03n' || $weather->weather->icon == '04d' || $weather->weather->icon == '04n'  || $weather->weather->icon == '50d' || $weather->weather->icon == '50n'){
     $temps = 'nuageux';
@@ -541,8 +543,3 @@ if ($weather == null){
 }elseif ($weather->weather->icon == '13d' || $weather->weather->icon == '13n'){
     $temps = 'neige';
 }
-echo $temps;
-
-
-
-

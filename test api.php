@@ -520,7 +520,7 @@ $units = 'metric';
 $owm = new OpenWeatherMap('e4f9475bdd806e15239188aa6feb4fd8');
 
 try {
-    $weather = $owm->getWeather('hjhgjhghj', $units, $lang);
+    $weather = $owm->getWeather('', $units, $lang);
 } catch(OWMException $e) {
     echo 'OpenWeatherMap exception: ' . $e->getMessage() . ' (Code ' . $e->getCode() . ').';
 } catch(\Exception $e) {
@@ -529,9 +529,7 @@ try {
 
 
 
-if ($weather->city->name == null){
-    $temps = "erreur";
-} elseif ($weather->weather->icon == "01d" || $weather->weather->icon == "01n" || $weather->weather->icon == "02d" || $weather->weather->icon == "02n"){
+elseif ($weather->weather->icon == "01d" || $weather->weather->icon == "01n" || $weather->weather->icon == "02d" || $weather->weather->icon == "02n"){
     $temps = "beau temps";
 } elseif ($weather->weather->icon == '03d' || $weather->weather->icon == '03n' || $weather->weather->icon == '04d' || $weather->weather->icon == '04n'  || $weather->weather->icon == '50d' || $weather->weather->icon == '50n'){
     $temps = 'nuageux';
@@ -542,8 +540,8 @@ if ($weather->city->name == null){
 } elseif ($weather->weather->icon == '13d' || $weather->weather->icon == '13n'){
     $temps = 'neige';
 }
-echo $temps . '<br/>';
+//echo $temps . '<br/>';
 /*echo ($weather->temperature->now->getValue()) . ' degres' . '<br/>';
 echo ($weather->city->name) . '<br/>';
 
-var_dump ($weather);
+var_dump ($weather);*/
