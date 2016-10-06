@@ -528,10 +528,9 @@ try {
 }
 
 
-
-
-
-if ($weather->weather->icon == "01d" || $weather->weather->icon == "01n" || $weather->weather->icon == "02d" || $weather->weather->icon == "02n"){
+if ($weather == null){
+    $temps = "erreur";
+}elseif($weather->weather->icon == "01d" || $weather->weather->icon == "01n" || $weather->weather->icon == "02d" || $weather->weather->icon == "02n"){
     $temps = "beau temps";
 }elseif ($weather->weather->icon == '03d' || $weather->weather->icon == '03n' || $weather->weather->icon == '04d' || $weather->weather->icon == '04n'  || $weather->weather->icon == '50d' || $weather->weather->icon == '50n'){
     $temps = 'nuageux';
