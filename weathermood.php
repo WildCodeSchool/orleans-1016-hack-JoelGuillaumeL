@@ -25,8 +25,12 @@ include ('meteo.php');
 
 ?>
 <div class="container">
-    <h1>WeatherMood</h1>
-    <input type="text" class="form-control" placeholder="Entrez une Ville">
+    <div class="row">
+        <h1>WeatherMood</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-3">
     <?php
         if ($temps == 'beau temps') {
             include ("playersun.php");
@@ -37,7 +41,12 @@ include ('meteo.php');
         }elseif ($temps == 'orageux') {
             include ('playerstorm.php');
         }
+        echo ($weather->city->name) . '<br/>';
+        echo ($weather->temperature->now);
     ?>
+        </div>
+        <div class="row"></div>
+    </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

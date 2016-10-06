@@ -25,11 +25,17 @@
 
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
     <form action="weathermood.php" method="post">
         <p>
             <input type="text" class="form-control" placeholder="Entrez une Ville" name="ville">
             <a href="weathermood.php"><imput type="submit" class="btn btn-default" value="validé"></imput></a>
         </p>
     </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
