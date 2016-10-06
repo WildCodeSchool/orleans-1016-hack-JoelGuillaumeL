@@ -1,16 +1,14 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/weathermood.css" rel="stylesheet">
+    <link href="css/weathermood.css" type="text/css" rel="stylesheet">
+    <link href="css/weathermood.css" type="text/css" rel="stylesheetindex">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,17 +38,21 @@
 
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-6">
-    <form action="weathermood.php" method="post">
-        <p>
-            <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
-            <a href="weathermood.php"><imput type="submit" class="btn btn-default" value="validé"></imput></a>
-        </p>
-    </form>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+        <form action="weathermood.php" method="post">
+            <div>
+                <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
+            </div>
+            <div>
+                <a href="weathermood.php"><imput type="submit" class="btn btn-default" value="validé">Frog</imput></a>
+            </div>
+        </form>
+                </div>
             </div>
         </div>
-    </div>
+
 </body>
 </html>
