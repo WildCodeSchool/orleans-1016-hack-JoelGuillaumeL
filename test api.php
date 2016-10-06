@@ -520,7 +520,7 @@ $units = 'metric';
 $owm = new OpenWeatherMap('e4f9475bdd806e15239188aa6feb4fd8');
 
 try {
-    $weather = $owm->getWeather('orléans', $units, $lang);
+    $weather = $owm->getWeather('bratislava', $units, $lang);
 } catch(OWMException $e) {
     echo 'OpenWeatherMap exception: ' . $e->getMessage() . ' (Code ' . $e->getCode() . ').';
 } catch(\Exception $e) {

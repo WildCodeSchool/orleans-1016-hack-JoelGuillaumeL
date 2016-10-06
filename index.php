@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,31 +18,18 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
 </head>
 <body>
-<?php
-
-include ('meteo.php');
-
-?>
-<div class="container">
-    <h1>WeatherMood</h1>
-    <input type="text" class="form-control" placeholder="Entrez une Ville">
-    <?php
-        if ($temps == 'beau temps') {
-            include ("playersun.php");
-        }elseif ($temps == 'nuageux') {
-            include ("playercloud.php");
-        }elseif ($temps == 'pluvieux') {
-            include ("playerrain.php");
-        }elseif ($temps == 'orageux') {
-            include ('playerstorm.php');
-        }
-    ?>
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
+    <form action="weathermood.php" method="post">
+        <p>
+            <input type="text" class="form-control" placeholder="Entrez une Ville" name="ville">
+            <a href="weathermood.php"><imput type="submit" class="btn btn-default" value="validé"></imput></a>
+        </p>
+    </form>
 </body>
 </html>

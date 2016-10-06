@@ -518,9 +518,9 @@ $units = 'metric';
 // Create OpenWeatherMap object.
 // Don't use caching (take a look into Examples/Cache.php to see how it works).
 $owm = new OpenWeatherMap('e4f9475bdd806e15239188aa6feb4fd8');
-
+$ville = $_POST['ville'];
 try {
-    $weather = $owm->getWeather('orléans', $units, $lang);
+    $weather = $owm->getWeather($ville, $units, $lang);
 } catch(OWMException $e) {
     echo 'OpenWeatherMap exception: ' . $e->getMessage() . ' (Code ' . $e->getCode() . ').';
 } catch(\Exception $e) {
