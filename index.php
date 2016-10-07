@@ -35,7 +35,10 @@
                                <form action="weathermood.php" method="post">
                                     <div>
                                         <div>
-                                            <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
+                                            <input type="text" class="form-control" placeholder="Text input"
+                                                   name="ville">
+                                           <!-- <input id="recherche-ville" type="text" placeholder="Entrez une ville"
+                                                    autocomplete="on" name="ville"> -->
 
                                             <a href="weathermood.php"><button type="submit" class="btn btn-default" value="validé">WeatherMood</button></a>
                                         </div>
