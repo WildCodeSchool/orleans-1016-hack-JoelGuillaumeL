@@ -16,6 +16,7 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <![endif]-->
 </head>
 <body>
@@ -29,9 +30,10 @@ include ('meteo.php');
         <h1>WeatherMood</h1>
     </div>
 
-    <div class="row">
-        <div class="col-xs-3">
+            <div class="echo">
+
     <?php
+    $image = 'images/' . ($weather->weather->icon) . '.png';
         if ($temps == 'beau temps') {
             include ("playersun.php");
         }elseif ($temps == 'nuageux') {
@@ -41,11 +43,16 @@ include ('meteo.php');
         }elseif ($temps == 'orageux') {
             include ('playerstorm.php');
         }
-        echo ($weather->city->name) . '<br/>';
-        echo ($weather->temperature->now);
-    ?>
-        </div>
-        <div class="row"></div>
+
+    echo '<br/>';
+    print '<img width="150px" height="150px" src="'.$image.'" alt="image_meteo" />';
+    echo '<br/>';
+    echo 'A  '.($weather->city->name) . '  ';
+    echo 'la température est de    '.($weather->temperature->now). '  ';
+    echo '   et le temps est  '.$temps. '</br>';
+
+?>
+
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

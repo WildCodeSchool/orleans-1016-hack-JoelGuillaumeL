@@ -1,8 +1,24 @@
+
 h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 5.5em;
+    text-decoration: bold;
     text-align: center;
-    margin: 15%;
+    margin: 5%;
 }
 
 .player {
-    margin: 15%;
+    margin: 5%;
+}
+
+.echo {
+    text-align: center;
+    font-size: 1.5em;
+    color: whitesmoke;
+    text-shadow: 3px 3px 2px #0f0f0f;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
 }

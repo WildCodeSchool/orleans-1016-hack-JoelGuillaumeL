@@ -35,7 +35,9 @@
                 <div class="col-xs-6">
                     <form action="weathermood.php" method="post">
                         <div>
-                            <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
+                            <input type="text" class="form-control" placeholder="Text input" name="ville">
+                          <!-- <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on"
+                                    name="ville"> -->
                         </div>
                         <div>
                             <a href="weathermood.php"><imput type="submit" class="btn btn-default" value="validé">Frog</imput></a>
