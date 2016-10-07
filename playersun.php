@@ -4,7 +4,7 @@
           <title>test</title>
 
      </head>
-     <body style="background-image:url(http://www.wallpaperup.com/uploads/wallpapers/2013/07/26/123747/468df333248f21e7857294126737c48e.jpg)">
+     <body style="background-image:url(images/soleil.jpg)">
      <div class="container">
           <div class="col-xs-offset-3 col-xs-3">
 

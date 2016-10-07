@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <title>test</title>
 </head>
-<body style="background-image:url(http://img1.mxstatic.com/wallpapers/87fc3805cc63632c60d3a76d010fac7e_large.jpeg)">
+<body style="background-image:url(images/orage.jpg)">
 <div class="container">
     <div class="col-xs-offset-3 col-xs-3">
 

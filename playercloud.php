@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <title>test</title>
 </head>
-<body style="background-image:url(http://images.forwallpaper.com/files/images/0/013c/013ca71b/214192/the-storm.jpg)">
+<body style="background-image:url(images/nuages.jpg)">
 <div class="container">
     <div class="col-xs-offset-3 col-xs-3">
         <iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=square&autoplay=true&playlist=false&width=500&height=500&color=007FEB&layout=dark&size=big&type=playlist&id=182632161&app_id=1" width="1" height="1"></iframe>

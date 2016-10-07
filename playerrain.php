@@ -3,7 +3,7 @@
           <meta charset="utf-8">
           <title>test</title>
      </head>
-     <body style="background-image:url(http://imgview.info/download/20150609/free-rain-wallpaper-1920x1200.jpg)">
+     <body style="background-image:url(images/pluie.jpg)">
           <div class="container">
                <div class="col-xs-offset-3 col-xs-3">
 
