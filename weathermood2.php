@@ -26,13 +26,13 @@ include ('meteo.php');
 
 <?php
         $image = 'images/' . ($weather->weather->icon) . '.png';
-        if ($temps == 'beau temps') {
+        if ($temps == 'Beau temps') {
             include ("playersun.php");
-        }elseif ($temps == 'nuageux') {
+        }elseif ($temps == 'Nuageux') {
             include ("playercloud.php");
-        }elseif ($temps == 'pluvieux') {
+        }elseif ($temps == 'Pluvieux') {
             include ("playerrain.php");
-        }elseif ($temps == 'orageux') {
+        }elseif ($temps == 'Orageux') {
             include ('playerstorm.php');
         }
 
@@ -57,7 +57,7 @@ include ('meteo.php');
 
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 tuile">
-            <div><?php echo '<img class="imges" src="'.$image.'"  />'; ?>
+            <div><?php echo '<img class="imges" src="'.$image.'"  /><br/>' . ($temps); ?>
             </div>
         </div>
         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 inter">
