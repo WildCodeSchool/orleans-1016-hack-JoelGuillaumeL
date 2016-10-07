@@ -533,13 +533,13 @@ try {
 
 
 if ($weather->weather->icon == "01d" || $weather->weather->icon == "01n" || $weather->weather->icon == "02d" || $weather->weather->icon == "02n"){
-    $temps = "beau temps";
+    $temps = "Beau temps";
 }elseif ($weather->weather->icon == '03d' || $weather->weather->icon == '03n' || $weather->weather->icon == '04d' || $weather->weather->icon == '04n'  || $weather->weather->icon == '50d' || $weather->weather->icon == '50n'){
-    $temps = 'nuageux';
+    $temps = 'Nuageux';
 }elseif ($weather->weather->icon == '09d' || $weather->weather->icon == '09n' || $weather->weather->icon == '10d' || $weather->weather->icon == '10n'){
-    $temps = 'pluvieux';
+    $temps = 'Pluvieux';
 }elseif ($weather->weather->icon == '11d' || $weather->weather->icon == '11n') {
-    $temps = 'orageux';
+    $temps = 'Orageux';
 }elseif ($weather->weather->icon == '13d' || $weather->weather->icon == '13n'){
-    $temps = 'neige';
+    $temps = 'Neige';
 }
