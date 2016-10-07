@@ -29,30 +29,21 @@
 
 </head>
 <body>
-<div style de = " Position : fixe ; z - index : - 99 ; largeur : 100 %; hauteur : 100 % " >
-    <iframe frameborder = "0" hauteur = "100%" width = "100%"
-            src = "https://www.youtube.com/watch?v=Fki8FxTryuIID?autoplay=1&controls=0&showinfo=0&autohide=1" >
-    </ Iframe>
-</ Div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-l-6">
 
-                </div>
-                <div class="col-l-6">
-                    <form action="weathermood.php" method="post">
+ <center><div  class="vcenter">
+                               <form action="weathermood.php" method="post">
+                                    <div>
+                                        <div>
+                                            <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
 
-                        <div id="champtxt">
-                            <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
-                        </div>
-                        <div id="bouton">
-                            <a href="weathermood.php"><imput type="submit" class="btn btn-default" value="validé">Frog</imput></a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+                                            <a href="weathermood.php"><button type="submit" class="btn btn-default" value="validé">WeatherMood</button></a>
+                                        </div>
+                                    </div>
+                                </form>
+            </div></center>
+
+
 
 </body>
 </html>
