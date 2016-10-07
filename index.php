@@ -30,20 +30,22 @@
 </head>
 <body>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6">
-                    <form action="weathermood.php" method="post">
-                        <div>
-                            <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
-                        </div>
-                        <div>
-                            <a href="weathermood.php"><imput type="submit" class="btn btn-default" value="validé">Frog</imput></a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+
+
+
+
+ <center><div  class="vcenter">
+                               <form action="weathermood.php" method="post">
+                                    <div>
+                                        <div>
+                                            <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
+
+                                            <a href="weathermood.php"><button type="submit" class="btn btn-default" value="validé">WeatherMood</button></a>
+                                        </div>
+                                    </div>
+                                </form>
+            </div></center>
+
 
 </body>
 </html>
