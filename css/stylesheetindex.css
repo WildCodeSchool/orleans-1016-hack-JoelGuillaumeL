@@ -1,15 +1,23 @@
-@import url('bootstrap.min.css');
+/*@import url('bootstrap.min.css');
 
 body{
-    background: url("../images/frog.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("../images/frog2.jpg") no-repeat center center fixed;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size:100% auto;
     margin-top: 12%;
-}
 
-#bg{
-    background:url("../images/frog.jpg") no-repeat center center fixed;
-    height: auto;
+
+}*/
+
+#champtxt{
+    margin-top: 15%;
+    margin-left: 4%;
+
+}
+#bouton{
+    margin-top: 2%;
+    margin-left: 4%;
+
 }
