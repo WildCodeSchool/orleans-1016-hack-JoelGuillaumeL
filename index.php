@@ -32,14 +32,14 @@
 
 
  <center><div  class="vcenter">
-                               <form action="weathermood.php" method="post">
-                                    <div>
-                                        <div>
-                                            <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
+                               <form action="weathermood2.php" method="post">
 
-                                            <a href="weathermood.php"><button type="submit" class="btn btn-default" value="validé">WeatherMood</button></a>
-                                        </div>
+                                    <div class="rechechbar">
+                                        <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
+
+                                        <a href="weathermood2.php"><button type="submit" class="btn btn-default" value="validé">WeatherMood</button></a>
                                     </div>
+
                                 </form>
             </div></center>
 
