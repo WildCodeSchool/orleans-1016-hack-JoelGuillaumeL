@@ -9,6 +9,7 @@ h1 {
 
 .player {
     margin: 5%;
+    max-height: 150px;
 }
 
 .echo {

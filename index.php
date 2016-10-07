@@ -32,7 +32,13 @@
 
 
  <center><div  class="vcenter">
+
                                <form action="weathermood2.php" method="post">
+
+
+                                    <div>
+                                        <div>
+
 
                                     <div class="rechechbar">
                                         <input id="recherche-ville" type="text" placeholder="Entrez une ville" autocomplete="on" name="ville">
